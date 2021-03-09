@@ -57,14 +57,12 @@ const block = {
 	alive: true,
 }
 
-class App extends React.PureComponent {
-	render() {
-		return (
-			<code style={{ whiteSpace: "pre" }}>
-				{JSON.stringify(block, undefined, 2)}
-			</code>
-		)
-	}
+function App(props) {
+	return (
+		<code style={{ whiteSpace: "pre" }}>
+			{JSON.stringify(block, undefined, 2)}
+		</code>
+	)
 }
 
 ReactDOM.render(<App />, document.getElementById("root"))
